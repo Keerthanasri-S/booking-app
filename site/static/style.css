@@ -1,0 +1,466 @@
+:root {
+    --orange-color: #ff6b35;
+    --green-color: #28a745;
+    --light-gray: #f8f9fa;
+    --dark-gray: #6c757d;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+}
+
+/* Header Styles */
+header {
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.map-fare-badge {
+    position: absolute;
+    top: 0px;
+    right: 15%;
+    clip-path: polygon(100% 40%, 90% 100%, 10% 100%, 0% 40%);
+}
+
+.fs13 {
+    font-size: 13px;
+}
+
+.nav-link {
+    color: #fff !important;
+}
+
+.nav-tabs .nav-link.active {
+    color: var(--orange-color) !important;
+}
+
+.logo-circle {
+    width: 40px;
+    height: 40px;
+    background: linear-gradient(135deg, #ff6b35, #ff8c42);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo-text {
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.brand-text {
+    font-size: 12px;
+    color: #666;
+    line-height: 1;
+}
+
+.brand-name {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    line-height: 1;
+}
+
+.phone-number {
+    font-size: 24px;
+    font-weight: bold;
+    color: var(--orange-color);
+}
+
+.text-orange {
+    color: var(--orange-color) !important;
+}
+
+.btn-outline-orange {
+    border-color: var(--orange-color);
+    color: var(--orange-color);
+}
+
+.btn-outline-orange:hover {
+    background-color: var(--orange-color);
+    border-color: var(--orange-color);
+    color: white;
+}
+
+/* Main Container */
+.main-container {
+    height: calc(100vh - 120px);
+    overflow: hidden;
+}
+
+.set-dropdown {
+    border-right: 1px solid #ddd !important;
+    border-left: 1px solid #ddd !important;
+    border-radius: unset !important;
+    padding: 0 20px !important;
+}
+
+.set-dropdown button {
+    color: #ff6600;
+}
+
+.time-picker-container {
+    position: relative;
+}
+
+.dropdown-megamenu {
+    width: 500px;
+}
+
+/* Booking Sidebar */
+.booking-sidebar {
+    background-color: white;
+    border-right: 1px solid #e0e0e0;
+    margin: 25px;
+    width: 32%;
+}
+
+.nav-tabs .nav-link:focus,
+.nav-tabs .nav-link:hover,
+.btn.show,
+.btn-group>.btn:focus,
+.btn-group>.btn:hover {
+    border-color: transparent !important;
+}
+
+
+
+.tab-pane {
+    display: none;
+}
+
+.tab-pane.active {
+    display: block;
+}
+
+.booking-form-container {
+    padding: 0;
+}
+
+.booking-tabs {
+    display: flex;
+    background-color: var(--orange-color) !important;
+    padding-top: 10px;
+}
+
+.tab-btn {
+    flex: 1;
+    padding: 8px 16px;
+    border: none;
+    background-color: transparent;
+    color: #666;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.tab-btn.active {
+    background-color: var(--orange-color);
+    color: white;
+    width: 200px;
+}
+
+.tab-btn:hover:not(.active) {
+    background-color: #e9ecef;
+}
+
+.booking-form {
+    padding: 24px;
+}
+
+.form-label {
+    /* font-weight: 600; */
+    color: #333;
+    margin-bottom: 2px;
+}
+
+.form-control {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 8px 12px;
+    font-size: 14px;
+}
+
+.form-control:focus {
+    border-color: var(--orange-color);
+    box-shadow: 0 0 0 0.2rem rgba(255, 107, 53, 0.25);
+}
+
+
+.price-main {
+    font-size: 14px;
+    font-weight: bold;
+    color: #333;
+}
+
+.price-details {
+    font-size: 12px;
+    color: #666;
+    margin-top: 4px;
+}
+
+.book-now-btn {
+    background-color: var(--green-color);
+    border-color: var(--green-color);
+    font-weight: 600;
+    padding: 12px;
+    border-radius: 6px;
+}
+
+.book-now-btn:hover {
+    background-color: #218838;
+    border-color: #218838;
+}
+
+/* Map Container */
+.map-container {
+    position: relative;
+    height: 100%;
+}
+
+.map-wrapper {
+    position: relative;
+    height: 100%;
+    background: linear-gradient(135deg, #e3f2fd 0%, #bbdefb 100%);
+}
+
+.fare-badge {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 8px 16px;
+    border-radius: 20px;
+    z-index: 1000;
+}
+
+.fare-text {
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.map-placeholder {
+    width: 100%;
+    height: 100%;
+    background-image:
+        radial-gradient(circle at 20% 30%, rgba(255, 107, 53, 0.1) 0%, transparent 50%),
+        radial-gradient(circle at 80% 70%, rgba(40, 167, 69, 0.1) 0%, transparent 50%),
+        linear-gradient(135deg, #f0f8ff 0%, #e6f3ff 100%);
+    position: relative;
+    overflow: hidden;
+}
+
+.map-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.location-markers {
+    position: relative;
+    height: 100%;
+}
+
+.marker {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    background-color: white;
+    padding: 6px 12px;
+    border-radius: 20px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    font-size: 12px;
+    font-weight: 600;
+    z-index: 100;
+}
+
+.marker i {
+    margin-right: 6px;
+    font-size: 16px;
+}
+
+.start-marker {
+    transform: translate(-50%, -50%);
+}
+
+.end-marker {
+    transform: translate(50%, -50%);
+}
+
+.route-line {
+    position: absolute;
+    top: 45%;
+    left: 25%;
+    right: 30%;
+    height: 3px;
+    background: linear-gradient(90deg, var(--green-color), var(--orange-color));
+    border-radius: 2px;
+    transform: translateY(-50%) rotate(-10deg);
+    transform-origin: left center;
+}
+
+/* Footer */
+footer {
+    border-top: 1px solid #e0e0e0;
+    background-color: white !important;
+}
+
+.logo-circle-small {
+    width: 30px;
+    height: 30px;
+    background: linear-gradient(135deg, #ff6b35, #ff8c42);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo-text-small {
+    color: white;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.footer-links a {
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.footer-links a:hover {
+    color: var(--orange-color) !important;
+}
+
+.contact-numbers {
+    font-size: 12px;
+    color: #666;
+}
+
+.contact-numbers strong {
+    color: #333;
+}
+
+.copyright {
+    font-size: 11px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .main-container {
+        height: auto;
+    }
+
+    .booking-sidebar {
+        height: auto;
+    }
+
+    .map-container {
+        height: 400px;
+    }
+
+    .contact-numbers {
+        display: none;
+    }
+
+    .phone-number {
+        font-size: 18px;
+    }
+
+    .booking-form {
+        padding: 16px;
+    }
+
+    .fare-badge {
+        top: 10px;
+        right: 10px;
+        padding: 6px 12px;
+    }
+
+    .fare-text {
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 576px) {
+    .brand-text {
+        display: none;
+    }
+
+    .brand-name {
+        font-size: 16px;
+    }
+
+    .tab-btn {
+        padding: 10px 8px;
+        font-size: 12px;
+    }
+
+    .booking-form {
+        padding: 12px;
+    }
+
+    .marker {
+        padding: 4px 8px;
+        font-size: 10px;
+    }
+
+    .marker i {
+        font-size: 12px;
+    }
+}
+
+/* Animation Effects */
+.marker {
+    animation: markerPulse 2s infinite;
+}
+
+@keyframes markerPulse {
+
+    0%,
+    100% {
+        transform: translate(-50%, -50%) scale(1);
+    }
+
+    50% {
+        transform: translate(-50%, -50%) scale(1.05);
+    }
+}
+
+.end-marker {
+    animation: markerPulse 2s infinite 0.5s;
+}
+
+@keyframes markerPulse {
+
+    0%,
+    100% {
+        transform: translate(50%, -50%) scale(1);
+    }
+
+    50% {
+        transform: translate(50%, -50%) scale(1.05);
+    }
+}
+
+.route-line {
+    animation: routeGlow 3s infinite;
+}
+
+@keyframes routeGlow {
+
+    0%,
+    100% {
+        box-shadow: 0 0 5px rgba(255, 107, 53, 0.5);
+    }
+
+    50% {
+        box-shadow: 0 0 15px rgba(255, 107, 53, 0.8);
+    }
+}
