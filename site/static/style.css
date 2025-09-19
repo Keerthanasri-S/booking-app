@@ -116,7 +116,7 @@ header {
     background-color: white;
     border-right: 1px solid #e0e0e0;
     margin: 25px;
-    width: 32%;
+    width: 32% !important;
 }
 
 .nav-tabs .nav-link:focus,
