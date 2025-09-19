@@ -7,8 +7,9 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="./style.css">
+    <script src="./main.js"></script>
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr`.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <style>
         /* Simple time picker styles using Bootstrap classes */
@@ -147,13 +148,13 @@
             <input type="date" id="pickupDate" class="form-control">
           </div>
           <div class="col">
-             <label><i class="bi bi-clock me-1"></i> Time:</label>
+             <label><i class=" me-1"></i> Time:</label>
              <div class="time-picker-container">
                <div class="input-group">
-                 <input type="text" class="form-control" id="pickupTime" readonly placeholder="Select Time">
-                 <button class="btn btn-outline-secondary" type="button" id="pickupTimeBtn">
+                 <input type="text" class="form-control" id="pickupTime"  readonly placeholder="hh:mm">
+                 <span class="input-group-text"  id="pickupTimeBtn">
                    <i class="bi bi-clock"></i>
-                 </button>
+                 </span>
                </div>
                <div class="dropdown-menu p-0 overflow-auto" style="max-height: 200px; width: 100px;" id="pickupTimeDropdown">
                  <!-- Times will be added by JavaScript -->
@@ -216,16 +217,16 @@
                                     <div class="row g-2 mb-2">
           <div class="col">
             <label>Date :</label>
-            <input type="date" id="pickupDate" class="form-control">
+            <input type="date" id="packageDate" class="form-control">
           </div>
           <div class="col">
-             <label><i class="bi bi-clock me-1"></i> Time:</label>
+             <label><i class=" me-1"></i> Time:</label>
              <div class="time-picker-container">
                <div class="input-group">
-                 <input type="text" class="form-control" id="packageTime" readonly placeholder="Select Time">
-                 <button class="btn btn-outline-secondary" type="button" id="packageTimeBtn">
+                 <input type="text" class="form-control" id="packageTime" readonly placeholder="hh:mm">
+                 <span class="input-group-text" type="button" id="packageTimeBtn">
                    <i class="bi bi-clock"></i>
-                 </button>
+                 </span>
                </div>
                <div class="dropdown-menu p-0 overflow-auto" style="max-height: 200px; width: 100px;" id="packageTimeDropdown">
                  <!-- Times will be added by JavaScript -->
