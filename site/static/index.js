@@ -1,4 +1,4 @@
-// ================= Senior Code =================
+
 document.addEventListener('DOMContentLoaded', function () {
     // Tab switching functionality
     const tabButtons = document.querySelectorAll('.tab-btn');
@@ -164,7 +164,6 @@ function updateEstimatedTime(distance) {
     return Math.round((distance / averageSpeed) * 60);
 }
 
-// ================= Your Time Picker Code =================
 function generateTimeSlots(selectedDate) {
     const times = [];
     const now = new Date();
