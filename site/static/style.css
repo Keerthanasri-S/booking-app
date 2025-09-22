@@ -118,7 +118,9 @@ header {
     margin: 25px;
     width: 32% !important;
 }
-
+.time-picker-container {
+            position: relative;
+        }
 .nav-tabs .nav-link:focus,
 .nav-tabs .nav-link:hover,
 .btn.show,
